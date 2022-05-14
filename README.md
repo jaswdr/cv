@@ -1,5 +1,7 @@
 # My CV
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ac15c810-3262-4bd0-8f9c-930e4fc8bb79/deploy-status)](https://app.netlify.com/sites/jaswdr-cv/deploys)
+
 ### Building
 
 1. Install [hugo](https://gohugo.io) extended version
