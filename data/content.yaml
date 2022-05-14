@@ -1,0 +1,138 @@
+name: Jonathan Schweder
+email: jonathanschweder@gmail.com
+phone: '0830748404'
+website: jaswdr.dev
+github: jaswdr
+
+sections:
+  - heading: Summary
+    body: Experienced Software Engineer with extensive IT experience. Skills include proficiency in many programming languages, virtualization, analytic thinking and creative problem-solving. Able to apply customer service concepts to IT to enhance user experience for customers, employees and administration.
+
+  - heading: Skills
+    subsections:
+      - heading:
+          label: Practical Skills
+        points:
+          - Python and Go specialist
+          - AWS Cloud Native Solutions
+          - Big data (PySpark, Amazon EMR, AWS Glue, Amazon QuickSight)
+          - Containers (Docker, Amazon ECS, Kubernetes)
+          - Linux Developer (Ubuntu, Debian, Alpine, SUSE, Fedora and RHEL)
+      - heading:
+          label: Soft Skills
+        points:
+          - Advanced problem-solver
+          - Analytical and data-driven
+          - Flexible and handles ambiguity
+          - Clear communication and excellent collaborative skills
+          - Self-Directed Learning skills
+          - Offers opinions and exposes trade-offs
+
+  - heading: Experiences
+    subsections:
+      - heading:
+          label: System Development Engineer - Amazon Web Service (AWS)
+          startdate: Mar 2020
+        points:
+          - Develop workflow tools to deal with hundreds of thousands of devices each day
+          - Improve observability of running services
+          - Mitigate and remediate errors in projects to unblock customers
+          - Create tools to make the team move fast
+          - Work on internal campaigns to migrate legacy code
+          - Improve automation to deploy team projects in new AWS regions
+          - Apply data analysis techniques to generate insights and drive decisions
+          - Research Ops improvements based on historical data
+          - >-
+            **Technology Stack**: Python, Shell Script, PostgreSQL, PySpark, AWS Glue, Amazon QuickSight, ETL pipelines, Amazon EC2, Amazon S3, Amazon CloudWatch, Amazon RDS, AWS CloudFormation, Amazon internal tools (code deploying, code coverage, ticketing, monitoring, metrics, alarms).
+
+      - heading:
+          label: Software Engineer - Pantacor
+          startdate: Feb 2019
+          enddate: Mar 2020
+        points:
+          - Improved a Linux devices management platform
+          - Maintained infrastructure in a hybrid cloud Kubernetes cluster
+          - Refactored existing projects to improve performance
+          - Led development of new features
+          - Monitored applications to avoid applications outages and met customers' SLAs
+          - Built metrics from running applications for real time analyses
+          - Created unit tests to improve code base quality
+          - Found and fixed bugs in code base applying best practices
+          - >-
+            **Technology Stack**: Go, Python, C\C++, Shell Script, Docker, Kubernetes, Kafka, Grafana, Prometheus, NGINX, Apache httpd, Linux Server (Debian and Alpine), MySQL, PostgreSQL, MongoDB, Git, GitHub, Slack.
+
+      - heading:
+          label: Software Engineer - Eventials
+          startdate: Jun 2018
+          enddate: Feb 2019
+        points:
+          - Built and maintained live-streaming and video on demand products
+          - Built, test and deploying scalable, available and modular software products
+          - Stress-tested servers to validate code changes
+          - Changed existing software to correct errors, adapt to new hardware, and improve performance
+          - Developed code fixes and enhancements to include in future code releases and patches
+          - Collaborated with product management to design, build, and test systems
+          - Created a live-streaming product who runs on Raspberry Pi for health market
+          - >-
+            **Technology Stack**: Go, Python, C\C++, JavaScript/Node.js, Shell Script, Docker, AWS Stack (EC2, ECS, ECR, S3, RDS, CloudFront, Route 53, and others), Redis, RabbitMQ, Grafana, Prometheus, ELK Stack, NGINX, Apache, Jenkins CI, Linux Server (Ubuntu, Debian, Fedora, CentOS, RHEL, SUSE), PostgreSQL, Git, GitHub, Slack.
+
+      - heading:
+          label: Software Developer - Bludata
+          startdate: Sep 2014
+          enddate: Jun 2018
+        points:
+          - Changed existing software to correct errors, upgrade interfaces and improve performance.
+          - Directed software design and development while remaining focused on client needs.
+          - Worked with design teams to ensure software solutions elevated client side experience.
+          - Built, tested and deployed scalable, available and modular software products.
+          - Worked with clients to establish problem specifications and system design.
+          - Migrated legacy projects written in PHP language to Go.
+          - Created a live-streaming and telemetry product who runs on Raspberry Pi for the government.
+          - >-
+            **Technology Stack**: Go, C\C++, Python, PHP, Shell Script, JavaScript/Node.js, Docker, AWS Stack, Elastic Stack, NGINX, Jenkins CI, Linux Server (Ubuntu, Debian, Fedora, CentOS, RHEL), MySQL, PostgreSQL, MongoDB, Cassandra, ScyllaDB, Git, HG, GitHub, Bitbucket, Slack.
+
+      - heading:
+          label: Sysadmin - Pomerplast
+          startdate: Feb 2010
+          enddate: Sep 2014
+        points:
+          - Collaborated with product management to design, build and test systems
+          - Maintained existing applications and designed and delivered new applications
+          - Developed code fixes and enhancements to include in future code releases and patches
+          - Maintained infrastructure of applications servers in Windows and Linux platforms
+          - >-
+            **Technology Stack**: Windows Server, Remote Desktop Services, Active Directory, Linux Server, pfSense, iptables, MySQL, PostgreSQL, Sybase SQL Anywhere.
+
+  - heading: Education
+    subsections:
+      - heading:
+          label: Master's Degree Data Science
+          startdate: Feb 2022
+        degrees:
+          - University of Applied Sciences, Germany
+      - heading:
+          label: MBA Software Engineering
+          startdate: Jul 2018
+          enddate: Sep 2022
+        degrees:
+          -  Instituto de Gestão de Tecnologia da Informação, Brazil
+      - heading:
+          label: Bachelor’s Degree of Science in Computer Science
+          startdate: Jan 2010
+          enddate: Dec 2015
+        degrees:
+          -  Fundação Universidade Regional de Blumenau, Brazil
+  - heading: Languages
+    points:
+      - Portuguese (native)
+      - English (fluent)
+      - German (basic speaker, listener and reading, no writing skills)
+  - heading: Desired Salary
+    points:
+      - 110K EUR per year (negotiable)
+  - heading: Available to work remotely
+    points:
+      - Yes, between GMT-6 and GMT+3
+  - heading: Available for reallocation
+    points:
+      - Yes, to USA, Canada, UK, Portugal, Germany and Brazil
