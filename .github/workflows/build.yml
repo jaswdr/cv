@@ -1,0 +1,26 @@
+name: Build
+on: [push, pull_request]
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Gather build artifacts
+        run: |
+          mkdir build
+          cp Jonathan_Schweder_CV.pdf build/Jonathan_Schweder_CV.pdf
+          cp -r README.md build/
+      - name: Publish to GitHub pages
+        if: success() && github.ref == 'refs/heads/master'
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: build/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
