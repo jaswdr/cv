@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir build
           mv my_cv.pdf build/
-          cp -r README.md .github/_config.yml build/
+          cp -r README.md build/
       - name: Publish to GitHub pages
         if: success() && github.ref == 'refs/heads/main'
         uses: crazy-max/ghaction-github-pages@v1
