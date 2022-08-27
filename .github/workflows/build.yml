@@ -1,15 +1,11 @@
 name: Build
 on: [push, pull_request]
 jobs:
-  ctan:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      - name: release.sh
-        uses: dante-ev/latex-action@latest
-        with:
-          entrypoint: ./release.sh
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
