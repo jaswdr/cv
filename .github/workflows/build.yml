@@ -20,7 +20,7 @@ jobs:
       - name: Gather build artifacts
         run: |
           mkdir build
-          mv my_cv.pdf build/
+          mv my_cv.pdf build/Jonathan_Schweder_CV.pdf
           cp -r README.md build/
       - name: Publish to GitHub pages
         if: success() && github.ref == 'refs/heads/main'
