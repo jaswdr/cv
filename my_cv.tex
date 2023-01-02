@@ -1,86 +1,170 @@
-\documentclass{my_cv}
-\usepackage[skins]{tcolorbox}
+\documentclass[a4paper]{MagicalCV}
 
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
 \begin{document}
-\begin{multicols}{2}[
-    \titletext{Jonathan}%
-        {Schweder}%
-        {System's Development Engineer}%
-        {cv@jaswdr.dev}%
-        {+353 083 0748404}%
-        {jaswdr}%
-        {jaswdr.dev}%
-]
-\end{multicols}
 
-\section{\faFileText}{SUMMARY}
-Experienced Software Engineer with extensive IT experience. Skills include proficiency in many programming languages, virtualization, analytic thinking and creative problem-solving. Able to apply customer service concepts to enhance user experience, employees and administration.
+% Last update time
+\lastupdated
 
-\begin{multicols}{2}
+% Title name
+\namesection{Jonathan}{Schweder}{
+\phone{+353 83 0748404} \email{\href{mailto:cv@jaswdr.dev}{cv@jaswdr.dev}}}
 
-\section{\faList}{SKILLS}
+% Column one
+\begin{minipage}[t]{0.33\textwidth} 
 
-\textbf{Languages:} Python, Go, JavaScript, Ruby, Bash
+% Education
+\cvsection{Education} 
 
-\noindent\textbf{Tools:} Pyspark, AWS stack (EMR, Glue, QuickSight, EC2, S3, etc), Docker, Kubernetes
+\subsection{Msc Data Science}
+\descript{University of Applied Sciences}
+\cvevent{2024*}{Germany} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
 
-\noindent\textbf{Other:} Advanced problem-solver, Analytical and data-driven person, clear communicator and excellent collaborator, self-directed learner.
+\subsection{MBA Software Engineer}
+\descript{XP Educação}
+\cvevent{2020}{Minas Gerais, BR} 
+\sectionsep
 
-\section{\faPencil}{WORK}
+\subsection{Bsc in Computer Science}
+\descript{Fundação Universidade Regional de Blumenau}
+\cvevent{2015}{Blumenau, BR} 
+\sectionsep
 
-\work{System's Development Engineer / Mar 2020- Current}%
-    {Amazon Web Services, Dublin - Ireland}%
-    {Working on workflow system to deal with hundreds of thousands of network devices every day.}
-    {Python, PostgreSQL, DynamoDB, Pandas, Matplotlib, CloudWatch, CloudFormation, Lambda, S3}
+% Links
+\cvsection{Links}
 
-\work{Software Engineer / Feb 2019 - Mar 2020}%
-    {Pantacor - London, UK}%
-    {Worked on IoT management platform to enable customer to build, deploy and monitor remote fleets.}%
-    {Go, Kubernetes, Docker, Kafka, Grafana Prometheus, MongoDB}
+\github{GitHub} \href{https://github.com/jaswdr}{\bf jaswdr} \\
+\linkedin{Linkedin} \href{https://www.linkedin.com/in/jaswdr/}{\bf jaswdr} \\
+\homepage{Blog} \href{https://jaswdr.dev/}{\bf jaswdr.dev}
+\sectionsep
 
-\work{Software Engineer / Jun 2018 - Feb 2019}%
-    {Eventials - Blumenau, Santa Catarina, Brazil}%
-    {Built embed Linux application to live stream ultrasound exams for family members. Worked on enterprise-focused video streaming platform.}%
-    {Python, Django, Go, PostgreSQL, Redis, ffmpeg, Video encoding}
+% Soft-Skills
+\cvsection{Skills}
 
-\work{Software Developer / Sep 2014 - Jun 2018}%
-    {Bludata - Blumenau, Santa Catarina, Brazil}%
-    {Built multiple web applications to government, contractors, driving schools and license plate manufacturers. Built embed Linux application to audit driving exams.}%
-    {PHP, Laravel, Sybase, Delphi, C\#, UVC}%
+\subsection{Programming Languages}
+Python \textbullet{} Go \textbullet{} JavaScript \textbullet{} Ruby \textbullet{} Bash
+\sectionsep
 
-\columnbreak
+\subsection{Databases}
+PostgreSQL \textbullet{} MongoDB \textbullet{} DynamoDB \textbullet{} Redis \textbullet{} MySQL \textbullet{} SQL Server \textbullet{} Sybase
+\sectionsep
 
-\section{\faGraduationCap}{EDUCATION}
+\subsection{DevOps}
+AWS stack \textbullet{} Docker \textbullet{} Kubernetes \textbullet{} Jenkins \textbullet{} Grafana \textbullet{} Prometheus \textbullet{}  ELK stack
+\sectionsep
 
-\school{Master's Degree Data Science - 2024*} %
-{University of Applied Sciences - Germany} %
-{TBD}
+\subsection{Soft-Skills}
+Clear communicator \textbullet{} Analytical and data-driven person \textbullet{} Self-directed learner \textbullet{} Critical thinker \textbullet{}  Advanced problem-solver 
+\sectionsep
 
-\school{MBA Software Engineer - 2020} %
-{XP Educação - Minas Gerais, BR} %
-{Design and development of a video streaming platform}
+% Awards
+\cvsection{Awards} 
 
-\school{Bachelor's Degree in Computer Science - 2015} %
-{Fundação Universidade Regional de Blumenau - Santa Catarina, BR} %
-{Automatic Pet Feeder Prototype using Raspberry Pi}
+\subsection{Ownership Award}
+\descript{Amazon Web Services}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+As recognition for demonstrating ownership and deliver ahead of expectation to tour customers in AWS.
+\sectionsep
 
-\section{\faStar}{AWARDS}
+\subsection{Startup incubation}
+\descript{Instituto Gene}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Eplus goal was to democratize access to high-quality study materials and make it easier for educators and learners to find the resources they need.
+\sectionsep
 
-\begin{itemize}[noitemsep]
-    \item Ownership Award - As recognition for demonstrating ownership and deliver ahead of expectation to our customers in AWS.
-    \item Project approved for incubation - Eplus aimed to be a national knowledge base to help teachers and students and democratize access to excellent study materials.
-\end{itemize}
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
 
-\section{\faBookmark}{OTHER PROJECTS}
-\begin{itemize}[noitemsep]
-    \item \textbf{Faker}, an open source library to generate fake data in Go with zero dependencies.
-    \item My \textbf{personal blog} where I share my latest projects and studies.
-\end{itemize}
+% Summary
+\cvsection{Summary}
 
-\section{\faCoffee}{ACTIVITIES / INTERESTS}
+Highly skilled Software Engineer with a diverse IT background and a proven track record of success. Strong analytical and problem-solving skills, as well as proficiency in various programming languages and virtualization technologies. Demonstrated ability to improve customer and user experiences through the application of customer service concepts. Proficient at effectively communicating with both technical and non-technical stakeholders, including employees and administration.
 
-Proactive about learning diverse things and happy to discuss those. Favorite activities are playing video games and travel to discover new countries.
+% Experience
+\cvsection{Experience}
 
+\runsubsection{System's Development Engineer} \\
+\descript{Amazon Web Services}
+\cvevent{Mar 2020 – Current}{Dublin, IRL} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Reduced annual EC2 costs by 20\% through optimization efforts for multiple internal teams
+\item Developed and implemented data pipelines for extracting, transforming, and loading data for internal cost tracking reports used by leadership
+\item Successfully delivered critical project to mitigate high-availability risk for internal firewalls
+\item Developed and maintained internal workflow tools to manage hundreds of thousands of devices on a daily ba
+\end{tightemize}
+\sectionsep
 
-\end{multicols}
-\end{document}
+\runsubsection{Software Engineer} \\
+\descript{Pantacor}
+\cvevent{Feb 2019 – Mar 2020}{London, United Kingdom} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and maintained an IoT management platform to allow customers to build, deploy, and monitor remote fleets
+\item Improved and maintained a multi-cloud Kubernetes infrastructure
+\item Designed and implemented a centralized monitoring, tracing, and logging system for a multi-microservices architecture
+\end{tightemize}
+\sectionsep
+
+\runsubsection{System Analyst} \\
+\descript{Eventials}
+\cvevent{Jul 2018 – Feb 2019}{Blumenau, BR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed an embedded Linux application to enable live streaming of ultrasound exams for family members
+\item Contributed to the development of live streaming and video on demand products for enterprise customers
+\item Created integrations with various business partners to enhance the portfolio of products offered to customers
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Software and Web Developer} \\
+\descript{Bludata Software}
+\cvevent{Sep 2014 – Jul 2018}{Blumenau, BR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed multiple web applications for government agencies, contractors, driving schools, and license plate manufacturers
+\item Created an embedded Linux application to audit driving exams featuring telemetry and video recording capabilities
+\item Provided training to multiple colleges, emphasizing rapid ramp-up and ownership of skills
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Software Developer} \\
+\descript{Pomerplast Ind. e Com. de Plásticos}
+\cvevent{Feb 2010 – Sep 2014}{Pomerode, BR} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+\end{minipage} 
+\end{document}  
