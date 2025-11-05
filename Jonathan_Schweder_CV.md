@@ -214,4 +214,4 @@ Project "Eplus" accepted for startup incubation program focused on democratizing
 
 - **Reliability:** Maintained 99.9%+ uptime SLAs for mission-critical production systems
 
-- **Global Experience:** Worked across 4 countries (Ireland, UK, Brazil) with distributed teams serving global customer bases
+- **Global Experience:** Worked across 3 countries (Ireland, UK, Brazil) with distributed teams serving global customer bases
