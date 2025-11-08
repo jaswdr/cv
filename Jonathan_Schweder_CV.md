@@ -43,7 +43,7 @@ Member of the Infrastructure Reliability team responsible for operating MongoDB'
 
 - **Platform Operations:** Maintain and operate mission-critical internal Kubernetes infrastructure supporting 100+ engineering teams, achieving 99.9%+ uptime SLA through proactive monitoring and incident response
 
-- **Observability Excellence:** Built comprehensive monitoring and alerting systems using Thanos, Prometheus for distributed metrics collection, and Splunk for centralized log aggregation, reducing MTTD (Mean Time To Detect) by 60%
+- **Observability Excellence:** Built comprehensive monitoring and alerting systems using Thanos, Prometheus for distributed metrics collection, and Splunk for centralized log aggregation, reducing MTTD (Mean Time To Detect)
 
 - **Developer Enablement:** Developed and deployed self-service tools and applications on the platform, improving developer experience and demonstrating platform capabilities through direct usage
 
@@ -66,11 +66,11 @@ Key member of AWS Lambda's Control Plane team, one of AWS's most critical servic
 
 **AWS Lambda Control Plane Development:**
 
-- **API Development & Scalability:** Spearheaded development and maintenance of Lambda's Control Plane API serving millions of global customers, implementing features that improved API response times by 35% and handled 10x traffic growth
+- **API Development & Scalability:** Spearheaded development and maintenance of Lambda's Control Plane API serving millions of global customers, implementing features that improved API response times by 35%
 
-- **Customer Self-Service Features:** Led design and implementation of Lambda's self-service opt-out for recursion loop protection, eliminating 1,000+ annual support tickets and reducing customer resolution time from days to minutes
+- **Customer Self-Service Features:** Contributed to Lambda's self-service opt-out for recursion loop protection, eliminating 1,000+ annual support tickets and reducing customer resolution time from days to minutes
 
-- **Technical Leadership:** Mentored 5+ team members on distributed systems design and AWS best practices, improving team velocity by 30% and reducing operational ticket volume by 45% through knowledge sharing and documentation
+- **Technical Leadership:** Mentored 5+ team members on distributed systems design and AWS best practices, improving team velocity by 30% and through knowledge sharing and documentation
 
 - **Recursive Loop Protection:** Engineered opt-out configuration system preventing recursive function invocations triggered by S3 events, improving Lambda function stability and preventing customer cost overruns
 
@@ -108,7 +108,7 @@ Core member of a lean 5-person engineering team at IoT fleet management startup,
 
 - **Observability Implementation:** Architected and deployed comprehensive monitoring stack using Grafana, Prometheus, and TimescaleDB with custom dashboards and alerts, reducing mean incident response time by 30%
 
-- **Developer Productivity:** Created Kubernetes deployment templates and CI/CD pipelines for 10+ microservices (Go, TypeScript, Python), reducing production bugs by 50% and deployment time by 60%
+- **Developer Productivity:** Created Kubernetes deployment templates and CI/CD pipelines for 10+ microservices (Go, TypeScript, Python), reducing production bugs by 50%
 
 - **Customer-Driven Development:** Collaborated directly with CTO to prioritize features based on customer feedback, owned full lifecycle from design through production deployment and maintenance
 
