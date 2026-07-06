@@ -1,0 +1,5 @@
+__pycache__/
+# Vale styles, downloaded by `vale sync`
+.vale/
+# Job descriptions for `make score`: third-party text, and they show which jobs you target
+jobs/

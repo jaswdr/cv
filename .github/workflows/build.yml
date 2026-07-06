@@ -1,0 +1,41 @@
+name: Build
+on: [push, pull_request]
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+  ats_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+      - name: Install poppler and codespell
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils codespell
+      - name: Install Vale
+        run: |
+          curl -sSfL -o /tmp/vale.tar.gz https://github.com/vale-cli/vale/releases/download/v3.29.0/vale_3.29.0_Linux_64-bit.tar.gz
+          echo "00356ae1bacd1160aa415664f3ed0d34ce9ef5319c61d31123a97366ea1a2f64  /tmp/vale.tar.gz" | sha256sum -c -
+          sudo tar -xzf /tmp/vale.tar.gz -C /usr/local/bin vale
+      - name: Run ATS checks
+        run: make check
+  build_and_publish:
+    needs: ats_check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Gather build artifacts
+        run: |
+          mkdir build
+          cp Jonathan_Schweder_CV.pdf build/Jonathan_Schweder_CV.pdf
+          cp -r README.md build/
+      - name: Publish to GitHub pages
+        if: success() && github.ref == 'refs/heads/master'
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: build/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
