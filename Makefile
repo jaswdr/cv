@@ -9,13 +9,13 @@ PANDOC = pandoc
 
 # PDF configuration
 PDF_ENGINE = --pdf-engine=typst
-PDF_OPTIONS = -V mainfont="Libertinus Serif" -V geometry:margin=0.75in -V fontsize=10pt
+PDF_OPTIONS = -V mainfont="Libertinus Serif" -V geometry:margin=0.75in -V fontsize=10pt -V header-includes="\#set text(hyphenate: false)"
 
 # Default target
 .DEFAULT_GOAL := all
 
 # Phony targets (not actual files)
-.PHONY: all clean docx pdf help watch
+.PHONY: all clean docx pdf help watch check
 
 # Build all formats
 all: docx pdf
@@ -37,6 +37,12 @@ $(PDF): $(SOURCE)
 	@echo "Generating PDF..."
 	@$(PANDOC) $(SOURCE) -o $(PDF) $(PDF_ENGINE) $(PDF_OPTIONS)
 	@echo "✓ PDF generated: $(PDF)"
+
+# ATS checks on the PDF (needs poppler and codespell)
+check:
+	@python3 ats_check.py $(PDF)
+	@codespell $(SOURCE)
+	@echo "✓ ATS checks passed!"
 
 # Clean generated files
 clean:
@@ -62,6 +68,7 @@ help:
 	@echo "  make all      - Build all formats (DOCX and PDF)"
 	@echo "  make docx     - Generate DOCX only"
 	@echo "  make pdf      - Generate PDF only"
+	@echo "  make check    - Run ATS checks on the PDF"
 	@echo "  make clean    - Remove all generated files"
 	@echo "  make watch    - Watch for changes and auto-rebuild"
 	@echo "  make help     - Display this help message"
